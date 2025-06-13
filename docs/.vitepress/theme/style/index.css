@@ -2,6 +2,11 @@
 @import './var.css';
 
 /* 
+   首页logo大小
+ */
+@import './home-logo.css';
+
+/* 
   下划线
 */
 @import './marker.css';

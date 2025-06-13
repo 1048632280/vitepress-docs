@@ -1,0 +1,5 @@
+/* 自定义首页 Hero 图像大小 */
+.VPHomeHero .image img {
+  width: 140px; /* 或你想要的大小 */
+  height: auto; /* 保持比例 */
+}
