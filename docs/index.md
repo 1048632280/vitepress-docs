@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /开始/introduction
+      link: /Introduction/info
     - theme: alt
       text: API Examples
       link: /api-examples
