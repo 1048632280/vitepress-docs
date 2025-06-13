@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-
+import { generateSidebar } from "vitepress-sidebar"
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
 /*
@@ -36,24 +36,31 @@ export default defineConfig({
   },
   lastUpdated: true,
   head: [
-    ['link', { rel: 'icon', href: '/logo.svg' }],
+    ['link', { rel: 'icon', href: '/logo.png' }],
   ],
   themeConfig: {
     // 导航栏
     nav: [
       { text: '主页', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '服务器', link: '/start/introduction' }
     ],
     //侧边栏
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    sidebar: generateSidebar({
+      // 侧边栏的根目录，默认为docs
+      documentRootPath: "/docs",
+      // 使用h1的标题作为侧边栏的标题
+      useTitleFromFileHeading: true,
+      // 使用文件夹的index.md
+      useFolderTitleFromIndexFile: true,
+      // 指向文件夹的链接
+      useFolderLinkFromIndexFile: true,
+      // 根据md文件的order进行排序
+      sortMenusByFrontmatterOrder: true,
+      // 排序之后将不是文件夹的放后面
+      sortFolderTo: "top",
+      // 菜单展开功能
+      collapsed: false,
+  }),
     socialLinks: [
       { icon: 'github', link: 'https://github.com/1048632280/vitepress-docs' }
     ],
