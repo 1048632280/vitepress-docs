@@ -18,6 +18,8 @@ import {
   NolebaseEnhancedReadabilitiesScreenMenu,
 } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
+//开关
+const ENABLE_ENHANCED_READABILITIES = false; // 设置为 false 即禁用显示
 
 
 // 彩虹背景动画样式
@@ -46,11 +48,14 @@ export default {
 
   //聚光灯
   Layout: () => {
-    return h(DefaultTheme.Layout, null, {
-      'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
-      'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
-    })
-  },
+  return h(DefaultTheme.Layout, null, {
+    'nav-bar-content-after': () =>
+      ENABLE_ENHANCED_READABILITIES ? h(NolebaseEnhancedReadabilitiesMenu) : null,
+    'nav-screen-content-after': () =>
+      ENABLE_ENHANCED_READABILITIES ? h(NolebaseEnhancedReadabilitiesScreenMenu) : null,
+  })
+},
+
 
  enhanceApp({app , router }) {
 
