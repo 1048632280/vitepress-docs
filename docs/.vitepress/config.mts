@@ -22,14 +22,21 @@ export default defineConfig({
       ], 
     }, 
   }, 
+
+
+  markdown: {
 /*
  *  配置TODO
 */
-
-  markdown: {
     config: (md) => {
       md.use(markdownItTaskCheckbox) //todo
-    }
+    },
+/*
+ *  配置图片懒加载
+*/
+    image: {
+      lazyLoading: true
+    },
   },
 
 
