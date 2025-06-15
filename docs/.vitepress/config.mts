@@ -58,6 +58,8 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/logo.png' }],
   ],
   themeConfig: {
+    // 左上角logo
+    logo: '/logo.png',
     // 导航栏
     nav: [
       { text: '主页', link: '/' },
