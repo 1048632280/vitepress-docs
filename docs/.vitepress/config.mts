@@ -55,11 +55,11 @@ export default defineConfig({
   },
   lastUpdated: true,
   head: [
-    ['link', { rel: 'icon', href: '/logo.png' }],
+    ['link', { rel: 'icon', href: '/logo.svg' }],
   ],
   themeConfig: {
     // 左上角logo
-    logo: '/logo.png',
+    logo: '/logo.svg',
     // 导航栏
     nav: [
       { text: '主页', link: '/' },

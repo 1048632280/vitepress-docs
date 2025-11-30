@@ -1,4 +1,6 @@
 import { h } from 'vue'
+import type { App } from 'vue'
+import type { Router } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 
 
@@ -57,7 +59,7 @@ export default {
 },
 
 
- enhanceApp({app , router }) {
+ enhanceApp({ app, router }: { app: App; router: Router }) {
 
     // 彩虹背景动画样式
     if (typeof window !== 'undefined') {

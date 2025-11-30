@@ -1,58 +1,58 @@
 {
-  "hash": "13beafbc",
-  "configHash": "2d0a3e31",
-  "lockfileHash": "793af5e5",
-  "browserHash": "d516c768",
+  "hash": "96e7283e",
+  "configHash": "7670b53c",
+  "lockfileHash": "56e72e70",
+  "browserHash": "bb4ad996",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "50ef4445",
+      "fileHash": "0129d702",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "49e1f6c3",
+      "fileHash": "ddc86746",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "a8282c3e",
+      "fileHash": "71c6cebc",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "2b165da9",
+      "fileHash": "eeec792e",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../../node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "0cc47498",
+      "fileHash": "7c23e3f8",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "e2228a2d",
+      "fileHash": "2bea2cf3",
       "needsInterop": false
     },
     "medium-zoom": {
       "src": "../../../../node_modules/medium-zoom/dist/medium-zoom.esm.js",
       "file": "medium-zoom.js",
-      "fileHash": "536fbb1e",
+      "fileHash": "1fe85d5f",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-4JIJOCLY": {
-      "file": "chunk-4JIJOCLY.js"
+    "chunk-M4SUIUYK": {
+      "file": "chunk-M4SUIUYK.js"
     },
-    "chunk-FA4MWVOB": {
-      "file": "chunk-FA4MWVOB.js"
+    "chunk-CZRH2NFJ": {
+      "file": "chunk-CZRH2NFJ.js"
     }
   }
 }

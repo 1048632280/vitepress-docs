@@ -7,14 +7,14 @@ hero:
   text: "MC生电服务器"
   tagline: Hello World!
   image:
-    src: /logo.png
+    src: /logo.svg
     alt: MC Server
   actions:
     - theme: brand
       text: 开始
       link: /introduction/info
     - theme: alt
-      text: API Examples
+      text: 关于
       link: /api-examples
 
 features:
